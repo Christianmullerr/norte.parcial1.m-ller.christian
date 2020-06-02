@@ -1,0 +1,74 @@
+﻿/*IMPORTANTE - No modificar estos estilos, ya que son imprescindibles para que la pagina se vea correctamente.*/
+
+/*IMPORTANTE - No modificar estos estilos, ya que son imprescindibles para que la pagina se vea correctamente.*/
+
+html, body {
+    height: 100%;
+}
+
+/*h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}*/
+
+
+
+h1 {
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 1.2em
+}
+
+/* --------------- layout ------------------------*/
+
+#container {
+    width: 1250px;
+    margin: 0 auto;
+}
+#foto {
+    display: block;
+    margin-top: 40px;
+    text-align: center
+}
+
+#pub p {
+    border: solid;
+    padding: 10px 0px 10px 0px;
+    border-color: red;
+}
+
+header {
+    display: block;
+    background-color: #286af0;
+    padding: 1px 0px 10px;
+}
+
+section {
+    background-color: #ccc;
+    /*padding: 5px;*/
+    overflow: auto;
+    padding-bottom: 70px;
+    float: right;
+    width: 79%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 450px;
+}
+
+aside {
+   
+    float: left;
+    width: 19%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+ 
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 25px;
+    background-color: #286af0;
+    text-align: center;
+    color: #fafafa;
+   
+}

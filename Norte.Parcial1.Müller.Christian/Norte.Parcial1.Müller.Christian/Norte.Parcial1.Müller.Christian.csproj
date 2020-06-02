@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\expansion-hubble.jpg" />
+    <Content Include="Content\site.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -106,6 +107,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Cosmos.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

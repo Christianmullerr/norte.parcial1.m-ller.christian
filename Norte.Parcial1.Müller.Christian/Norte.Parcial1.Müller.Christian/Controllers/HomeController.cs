@@ -13,5 +13,9 @@ namespace Norte.Parcial1.Müller.Christian.Controllers
         {
             return View();
         }
+        public ActionResult Cosmos()
+        {
+            return View();
+        }
     }
 }
