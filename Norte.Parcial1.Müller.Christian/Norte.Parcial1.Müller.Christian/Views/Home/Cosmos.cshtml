@@ -3,5 +3,72 @@
     ViewBag.Title = "Cosmos";
 }
 
-<h2>Cosmos</h2>
+<h2>Gestión de cosmos</h2>
+<hr />
+<div>
+    <table border="0">
+        <tr>
+            <th>Siglo</th>
+            <td>
+                <input id="txtSiglo" type="text" placeholder="Ingrese el siglo de descubrimiento" />
+            </td>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <td>
+                <input id="txtNombre" type="text" placeholder="Ingrese el nombre del cosmo" />
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <input id="btnSave" type="button" value="Grabar" class="button-success color-success" />
+                <input id="btnList" type="button" value="Listar cosmos" class="button-default color-default" />
+            </td>
+        </tr>
+    </table>
+</div>
+<hr />
+<div id="resultado">
+
+</div>
+
+@section scripts{
+    <script>
+        var cosmos = new Array();
+
+        function Cosmo() {
+
+            this.setSiglo = function (value) { this._siglo = value; }
+            this.getSiglo = function () { return this._siglo; }
+
+            this.setNombre = function (value) { this._nombre = value; }
+            this.getNombre = function () { return this._nombre; }
+        }
+
+        //Eventos de los botones
+
+        $("#btnSave").click(function () {
+
+            var cos = new Cosmo();
+            cos.setSiglo($("#txtSiglo").val());
+            cos.setNombre($("#txtNombre").val());
+
+            cosmos.push(cos);
+            $("#txtSiglo").val("");
+            $("#txtNombre").val("");
+        });
+
+        $("#btnList").click(function () {
+
+            var ctl = $("#resultado");
+            ctl.html("");
+            $.each(cosmos, function (i, e) {
+                ctl.append("Siglo: " + e.getSiglo() + " - " + "Nombre: " + e.getNombre() + "<br />");
+            });
+        });
+    </script>
+
+}
+
 
